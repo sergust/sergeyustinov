@@ -1,30 +1,35 @@
 import type { NextComponentType } from 'next'
 import MenuItem from './menu/menu-item'
+import Button from '../controls/button'
+import Logo from './the-logo'
 
 const Header: NextComponentType = () => {
   const menuItems = [
     {
-      text: 'About',
+      text: 'about',
     },
     {
-      text: 'Experience',
+      text: 'experience',
     },
     {
-      text: 'Work',
+      text: 'work',
     },
     {
-      text: 'Contact',
+      text: 'contact',
     },
   ]
   return (
-    <div className="flex justify-between font-mono py-6 px-6 border-2 drop-shadow-md">
-      <div>Logo</div>
-      <div className={'flex'}>
-        {menuItems.map((item, index) => (
-          <MenuItem index={index + 1} key={index}>
-            {item.text}
-          </MenuItem>
-        ))}
+    <div className="drop-shadow-md py-6 px-10">
+      <div className="flex justify-between">
+        <Logo />
+        <div className="flex font-mono">
+          {menuItems.map(({ text }, index) => (
+            <MenuItem index={index + 1} key={index}>
+              {text}
+            </MenuItem>
+          ))}
+          <Button>Resume</Button>
+        </div>
       </div>
     </div>
   )
