@@ -2,6 +2,7 @@ import type { NextComponentType } from 'next'
 import MenuItem from './menu/menu-item'
 import Button from '../controls/button'
 import Logo from './the-logo'
+import Hamburger from './the-hamburger/the-hamburger'
 
 const Header: NextComponentType = () => {
   const menuItems = [
@@ -23,12 +24,18 @@ const Header: NextComponentType = () => {
       <div className="flex justify-between">
         <Logo />
         <div className="flex font-mono">
-          {menuItems.map(({ text }, index) => (
-            <MenuItem index={index + 1} key={index}>
-              {text}
-            </MenuItem>
-          ))}
-          <Button>Resume</Button>
+          <div className="hidden sm:hidden md:flex">
+            {/*TODO: Provide # for contents*/}
+            {menuItems.map(({ text }, index) => (
+              <MenuItem index={index + 1} key={index}>
+                {text}
+              </MenuItem>
+            ))}
+
+            {/*TODO: Add link to resume*/}
+            <Button>Resume</Button>
+          </div>
+          <Hamburger />
         </div>
       </div>
     </div>
