@@ -1,8 +1,15 @@
-import type { NextComponentType } from 'next'
+import type { NextComponentType, NextPage } from 'next'
 
-const Hamburger: NextComponentType = () => {
+interface Props {
+  toggleAsideMenu: Function
+}
+
+const Hamburger: NextPage<Props> = ({ toggleAsideMenu }) => {
   return (
-    <div className="p-4 space-y-2 md:hidden">
+    <div
+      className="p-4 space-y-2 md:hidden z-10 cursor-pointer"
+      onClick={() => toggleAsideMenu()}
+    >
       {[...Array(3)].map((_, index) => (
         <span key={index} className="block w-8 h-0.5 bg-green" />
       ))}
