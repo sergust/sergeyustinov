@@ -4,6 +4,7 @@ import Hamburger from './the-hamburger/the-hamburger'
 import Aside from './aside/aside'
 import Nav from './nav/nav'
 import { useState } from 'react'
+import { useAppContext } from '../../context/AppContext'
 
 export interface MenuItemInterface {
   text: string
@@ -25,9 +26,7 @@ export const menuItems: MenuItemInterface[] = [
 ]
 
 const Header: NextComponentType = () => {
-  const [showAsideMenu, setAsideMenu] = useState(false)
-
-  const toggleAsideMenu = () => setAsideMenu((prevState) => !prevState)
+  const { showAsideMenu } = useAppContext()
 
   return (
     <div className="drop-shadow-md py-6 px-10">
@@ -37,7 +36,7 @@ const Header: NextComponentType = () => {
           <div className="hidden sm:hidden md:flex">
             <Nav menuItems={menuItems} />
           </div>
-          <Hamburger toggleAsideMenu={toggleAsideMenu} />
+          <Hamburger />
           {showAsideMenu && <Aside menuItems={menuItems}></Aside>}
         </nav>
       </div>

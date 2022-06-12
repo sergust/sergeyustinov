@@ -1,10 +1,8 @@
-import type { NextComponentType, NextPage } from 'next'
+import type { NextPage } from 'next'
+import { useAppContext } from '../../../context/AppContext'
 
-interface Props {
-  toggleAsideMenu: Function
-}
-
-const Hamburger: NextPage<Props> = ({ toggleAsideMenu }) => {
+const Hamburger: NextPage = () => {
+  const { toggleAsideMenu } = useAppContext()
   return (
     <div
       className="p-4 space-y-2 md:hidden z-10 cursor-pointer"
