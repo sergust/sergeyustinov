@@ -11,7 +11,7 @@ const Aside: NextPage<Props> = ({ menuItems }) => {
   return (
     <>
       <aside
-        className="md:hidden bg-navy-light fixed flex flex-col h-screen items-center justify-center top-0 right-0"
+        className="md:hidden z-0 bg-navy-light fixed flex flex-col h-screen items-center justify-center top-0 right-0"
         style={{ width: 'min(75vw, 400px)' }}
       >
         <Nav menuItems={menuItems}></Nav>

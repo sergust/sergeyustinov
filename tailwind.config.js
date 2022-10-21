@@ -13,6 +13,8 @@ module.exports = {
       green: '#64ffda',
       navy: '#0a192f',
       'navy-light': '#112240',
+      paragraph: '#8892af',
+      header: '#ccd6f6',
     },
   },
   plugins: [],
