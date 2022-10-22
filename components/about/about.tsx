@@ -13,9 +13,9 @@ const technologiesList = [
 const About: NextComponentType = () => {
   return (
     <div className="py-64 container mx-auto flex items-center justify-center">
-      <div className="w-1/2 justify-start flex flex-col">
+      <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 md:w-full sm:w-full justify-start flex flex-col">
         <BlockTitle text="About Me" number="01" className="mb-8" />
-        <div className="flex gap-4">
+        <div className="flex flex-wrap-reverse sm:flex-nowrap gap-4">
           <div>
             <p>
               Hello, my name is Sergey Ustinov and I am enjoying building
@@ -26,17 +26,16 @@ const About: NextComponentType = () => {
             </p>
             <p>
               Currently, I am focused on building incredible IoT platform for
-              farmers Sensand which is a B2B SaaS platform that will serve
-              agriculture and land use managers as the end users, with the
-              entire AgTech ecosystem of tech providers working in one
-              environment.
+              farmers <a href="https://sensand.com/">Sensand</a> which is a B2B
+              SaaS platform that will serve agriculture and land use managers as
+              the end users, with the entire AgTech ecosystem of tech providers
+              working in one environment.
             </p>
             <p>Here are technologies that I am most experienced with:</p>
             <ul className="font-mono text-sm grid grid-cols-2">
               {technologiesList.map((item, index) => {
                 return (
                   <li key={`tech-item-${index}`}>
-                    <img src="" alt="" />
                     <span className="text-green mr-2">▷</span>
                     {item}
                   </li>
@@ -45,7 +44,10 @@ const About: NextComponentType = () => {
             </ul>
           </div>
 
-          <img src="/images/photo.jpeg" className="rounded-full w-1/3 h-fit" />
+          <img
+            src="/images/photo.jpeg"
+            className="rounded-full w-1/3 h-1/3 mx-auto"
+          />
         </div>
       </div>
     </div>
