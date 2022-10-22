@@ -4,6 +4,15 @@
 @import url('http://fonts.cdnfonts.com/css/sf-mono');
 @import url('http://fonts.cdnfonts.com/css/calibre');
 
+@layer base {
+  h2 {
+    @apply text-3xl text-header;
+  }
+  p {
+    @apply  text-xl text-base text-paragraph py-2
+  }
+}
+
 html,
 body {
   padding: 0;
