@@ -11,11 +11,11 @@
   h2 {
     @apply text-3xl text-header;
   }
+  h3 {
+    @apply text-2xl text-header
+  }
   p {
     @apply text-xl text-base text-paragraph py-2;
-  }
-  a {
-    @apply text-green !important;
   }
 }
 
