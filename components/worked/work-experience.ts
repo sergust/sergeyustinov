@@ -4,8 +4,12 @@ export const experienceList: IExperience[] = [
     company: 'Sensand',
     companyLink: 'https://sensand.com/',
     startDay: '1 June 2021',
-    endDay: 'Preset',
-    responsibilities: ['sdfsdf', 'sdfsd'],
+    endDay: 'Present',
+    responsibilities: [
+      'Develop product features, from inception to completion—including gathering and analyzing requirements, collaborating on design, and coding',
+      'Support, maintain, and upgrade code',
+      'Acting as the technical/team lead on development projects',
+    ],
     id: 1,
   },
   {
@@ -14,7 +18,12 @@ export const experienceList: IExperience[] = [
     companyLink: 'https://www.jibble.io/',
     startDay: '1 June 2020',
     endDay: '1 June 2021',
-    responsibilities: ['sdfsdf', 'sdfsd'],
+    responsibilities: [
+      'Building User Interface utilising Vue.js and TypeScript',
+      'Working on new features and move towards releasing a new version',
+      'Ensuring code quality and standards while meeting deadlines and delivering targets set by the product team',
+      'Working closely with the product manager, senior frontend developer, designer and backend developers in completing the scope of work',
+    ],
     id: 2,
   },
   {
@@ -23,7 +32,9 @@ export const experienceList: IExperience[] = [
     companyLink: 'https://www.jibble.io/',
     startDay: '1 June 2020',
     endDay: '1 June 2021',
-    responsibilities: ['sdfsdf', 'sdfsd'],
+    responsibilities: [
+      'Development of an interface for the admin panel to control oil drilling platforms using JavaScript, Vue.js and Vuex',
+    ],
     id: 3,
   },
 ]

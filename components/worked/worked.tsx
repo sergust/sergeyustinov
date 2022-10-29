@@ -21,13 +21,13 @@ const Worked: NextComponentType = () => {
           className="mb-8"
         />
         <div className="flex gap-4">
-          <div className="flex flex-col w-36">
+          <div className="flex flex-col">
             {experienceList.map((item) => (
               <button
                 key={`company-${item.id}`}
                 onClick={() => setSelectedExperience(item)}
                 className={`
-                transition-all font-mono hover:bg-green hover:bg-opacity-5 hover:text-green py-2 text-sm w-full ${
+                transition-all font-mono hover:bg-green hover:bg-opacity-5 hover:text-green py-2 px-8 text-sm w-full ${
                   isActive(item) && 'text-green bg-green bg-opacity-5'
                 }
                 `}
@@ -53,7 +53,7 @@ const Worked: NextComponentType = () => {
               {selectedExperience.responsibilities.map(
                 (responsibility, index) => {
                   return (
-                    <li key={`r-${index}`}>
+                    <li key={`r-${index}`} className="my-2">
                       <span className="text-green mr-2">▷</span>
                       {responsibility}
                     </li>
