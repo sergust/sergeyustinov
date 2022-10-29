@@ -30,8 +30,8 @@ export const experienceList: IExperience[] = [
     title: 'Front End Developer',
     company: 'Eriell',
     companyLink: 'https://www.jibble.io/',
-    startDay: '1 June 2020',
-    endDay: '1 June 2021',
+    startDay: '20 December 2019',
+    endDay: '1 June 2020',
     responsibilities: [
       'Development of an interface for the admin panel to control oil drilling platforms using JavaScript, Vue.js and Vuex',
     ],

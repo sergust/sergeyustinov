@@ -8,7 +8,7 @@ const Worked: NextComponentType = () => {
     experienceList[0]
   )
 
-  const isActive = (item: IExperience) => {
+  const isActive = (item: IExperience): boolean => {
     return selectedExperience.id === item.id
   }
 
