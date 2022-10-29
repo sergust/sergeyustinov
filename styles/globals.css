@@ -6,13 +6,13 @@
 
 @layer base {
   h1 {
-    @apply text-5xl sm:text-7xl font-black
+    @apply text-5xl sm:text-7xl font-black;
   }
   h2 {
     @apply text-3xl text-header;
   }
   h3 {
-    @apply text-2xl text-header
+    @apply text-2xl text-header;
   }
   p {
     @apply text-xl text-base text-paragraph py-2;
@@ -23,9 +23,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Calibre, Inter, San Francisco, SF Pro Text,
-    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-    Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Calibre, Inter, San Francisco, SF Pro Text, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, -apple-system, sans-serif;
   color: #8892b0;
 }
 
