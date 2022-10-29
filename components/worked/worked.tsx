@@ -20,8 +20,8 @@ const Worked: NextComponentType = () => {
           number="02"
           className="mb-8"
         />
-        <div className="flex gap-4">
-          <div className="flex flex-col">
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-row md:flex-col">
             {experienceList.map((item) => (
               <button
                 key={`company-${item.id}`}
