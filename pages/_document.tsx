@@ -21,7 +21,10 @@ class MyDocument extends Document {
             name="description"
             content="Portfolio website of Sergey Ustinov"
           />
-          <link href="http://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet" />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          />
         </Head>
         <body>
           <Main />
