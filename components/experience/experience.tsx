@@ -3,7 +3,7 @@ import BlockTitle from '../block-title/block-title'
 import { experienceList, IExperience } from './work-experience'
 import { useState } from 'react'
 
-const Worked: NextComponentType = () => {
+const Experience: NextComponentType = () => {
   const [selectedExperience, setSelectedExperience] = useState(
     experienceList[0]
   )
@@ -68,4 +68,4 @@ const Worked: NextComponentType = () => {
   )
 }
 
-export default Worked
+export default Experience
