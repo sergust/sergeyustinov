@@ -26,7 +26,7 @@ class MyDocument extends Document {
             content="upgrade-insecure-requests"
           />
         </Head>
-        <body>
+        <body className="bg-navy">
           <Main />
           <NextScript />
         </body>

@@ -3,6 +3,7 @@ import Header from '../components/header/header'
 import Summary from '../components/summary/summary'
 import About from '../components/about/about'
 import Experience from '../components/experience/experience'
+import Portfolio from '../components/portfolio/portfolio'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Summary />
       <About />
       <Experience />
+      {/*<Portfolio />*/}
     </main>
   )
 }
