@@ -16,7 +16,7 @@
     @apply text-2xl text-header;
   }
   p {
-    @apply text-xl text-base text-paragraph py-2;
+    @apply text-xl text-paragraph py-2;
   }
 }
 
