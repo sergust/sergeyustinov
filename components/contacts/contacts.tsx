@@ -41,7 +41,7 @@ const Contacts: NextComponentType = () => {
           inbox is always open for you. Whether you want to propose cooperation
           or just say hello, I will try to answer you as soon as possible
         </p>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           {contacts.map((contact, index) => (
             <IconButton {...contact} key={index} />
           ))}

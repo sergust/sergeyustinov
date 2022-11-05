@@ -5,6 +5,7 @@ import About from '../components/about/about'
 import Experience from '../components/experience/experience'
 // import Portfolio from '../components/portfolio/portfolio'
 import Contacts from '../components/contacts/contacts'
+import Footer from '../components/footer/footer'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Experience />
       {/*<Portfolio />*/}
       <Contacts />
+      <Footer />
     </main>
   )
 }
