@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconName } from '@fortawesome/fontawesome-svg-core'
+import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core'
 import { NextPage } from 'next'
 
 interface IIconButtonProps {
@@ -9,7 +9,6 @@ interface IIconButtonProps {
 }
 
 const IconButton: NextPage<IIconButtonProps> = ({ icon, text, link }) => {
-  // @ts-ignore
   return (
     <button
       className={
@@ -17,7 +16,7 @@ const IconButton: NextPage<IIconButtonProps> = ({ icon, text, link }) => {
       }
       onClick={() => window.open(link, '_blank')}
     >
-      {icon && <FontAwesomeIcon icon={`fa-brands fa-${icon}`} />}
+      {icon && <FontAwesomeIcon icon={`fa-brands fa-${icon}` as IconProp} />}
       {text}
     </button>
   )
