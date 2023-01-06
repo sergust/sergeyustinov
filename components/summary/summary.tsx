@@ -1,4 +1,5 @@
 import type { NextComponentType } from 'next'
+import Blob from '../blob/blob'
 
 const Summary: NextComponentType = () => {
   return (
@@ -13,12 +14,13 @@ const Summary: NextComponentType = () => {
         </div>
 
         <p className="w-full sm:w-2/3">
-          I am a Senior Software Engineer with 3 years of experience and strong
-          fundamentals in Front End technologies. Likes building scalable web
-          infrastructure and making websites fast. Passionate about programming
-          languages, designs, and developer tooling.
+          I am a highly skilled software engineer with over 2 years of
+          experience in developing and maintaining software applications. My
+          focus is on front-end development using Angular, Vue, React, and
+          TypeScript
         </p>
       </div>
+      <Blob />
     </div>
   )
 }

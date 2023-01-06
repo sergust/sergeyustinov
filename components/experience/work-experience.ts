@@ -4,16 +4,19 @@ export const experienceList: IExperience[] = [
     company: 'Sensand',
     companyLink: 'https://sensand.com/',
     startDay: '1 June 2021',
-    endDay: 'Present',
+    endDay: 'Current',
     responsibilities: [
-      'Develop product features, from inception to completion—including gathering and analyzing requirements, collaborating on design, and coding',
-      'Support, maintain, and upgrade code',
-      'Acting as the technical/team lead on development projects',
+      'Writing and testing code, deploying applications, diagnosing, debugging and troubleshooting issues, improving the structure and quality of code through refactoring',
+      'Performing regular code review as a part of software quality assurance process',
+      'Creating and updating documentation for the code base to assist both users and developers in understanding and using the product and code accordingly',
+      'Developing, implementing, and maintaining automated test system utilising Jest to ensure the reliability and stability of the code',
+      'Collaborating with cross-functional teams to develop and introduce new features',
+      'Provide technical advice and consultations to the cross-functional teams in relation to Front End to assist the process of new features development and implementation',
     ],
     id: 1,
   },
   {
-    title: 'Front End Developer',
+    title: 'Software Engineer',
     company: 'Jibble',
     companyLink: 'https://www.jibble.io/',
     startDay: '1 June 2020',
@@ -25,17 +28,6 @@ export const experienceList: IExperience[] = [
       'Working closely with the product manager, senior frontend developer, designer and backend developers in completing the scope of work',
     ],
     id: 2,
-  },
-  {
-    title: 'Front End Developer',
-    company: 'Eriell',
-    companyLink: 'https://www.jibble.io/',
-    startDay: '20 December 2019',
-    endDay: '1 June 2020',
-    responsibilities: [
-      'Development of an interface for the admin panel to control oil drilling platforms using JavaScript, Vue.js and Vuex',
-    ],
-    id: 3,
   },
 ]
 

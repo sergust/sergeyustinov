@@ -8,6 +8,11 @@ interface Props {
 }
 
 const Nav: NextPage<Props> = ({ menuItems }) => {
+  const openResume = () =>
+    window.open(
+      'https://docs.google.com/document/d/15xrlMch5OL_s_ttqkmcvCVhsEu58BTMXaqzmrPB5kW8/edit?usp=sharing',
+      '_blank'
+    )
   return (
     <>
       {/*TODO: Provide # for contents*/}
@@ -17,8 +22,7 @@ const Nav: NextPage<Props> = ({ menuItems }) => {
         </MenuItem>
       ))}
 
-      {/*TODO: Add link to resume*/}
-      <Button>Resume</Button>
+      <Button onClick={openResume}>Resume</Button>
     </>
   )
 }
