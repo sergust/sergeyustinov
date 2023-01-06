@@ -1,5 +1,4 @@
 import type { NextComponentType } from 'next'
-import Blob from '../blob/blob'
 
 const Summary: NextComponentType = () => {
   return (
@@ -20,7 +19,6 @@ const Summary: NextComponentType = () => {
           TypeScript
         </p>
       </div>
-      <Blob />
     </div>
   )
 }
