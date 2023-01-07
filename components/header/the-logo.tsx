@@ -7,9 +7,9 @@ const Logo: NextPage = () => {
   return (
     <div
       onClick={handleClick}
-      className="cursor-pointer text-4xl text-green font-sans font-semibold subpixel-antialiased tracking-wide"
+      className="cursor-pointer text-[36px] text-green tracking-wide border-[1px] border-green px-2"
     >
-      SU
+      <div className="pt-[8px]">SU</div>
     </div>
   )
 }
