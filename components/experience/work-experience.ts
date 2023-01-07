@@ -14,6 +14,7 @@ export const experienceList: IExperience[] = [
       'Provide technical advice and consultations to the cross-functional teams in relation to Front End to assist the process of new features development and implementation',
     ],
     id: 1,
+    skills: ['TypeScript', 'Angular', 'Tailwind CSS'],
   },
   {
     title: 'Software Engineer',
@@ -28,6 +29,7 @@ export const experienceList: IExperience[] = [
       'Working closely with the product manager, senior frontend developer, designer and backend developers in completing the scope of work',
     ],
     id: 2,
+    skills: ['TypeScript', 'Vuetify', 'Vue'],
   },
 ]
 
@@ -39,4 +41,5 @@ export interface IExperience {
   endDay: string
   responsibilities: string[]
   id: number
+  skills?: string[]
 }

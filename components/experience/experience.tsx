@@ -48,6 +48,12 @@ const Experience: NextComponentType = () => {
             <p className="font-mono my-2">
               {selectedExperience.startDay} – {selectedExperience.endDay}
             </p>
+            <div className="flex font-mono gap-2 py-4">
+              <div>Skills:</div>
+              {selectedExperience.skills?.map((skill, index) => (
+                <div key={index}>{skill}</div>
+              ))}
+            </div>
             <ul>
               {selectedExperience.responsibilities.map(
                 (responsibility, index) => {
