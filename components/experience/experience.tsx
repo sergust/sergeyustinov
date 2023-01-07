@@ -13,11 +13,11 @@ const Experience: NextComponentType = () => {
   }
 
   return (
-    <div
-      id="experience"
-      className="container mx-auto flex items-center justify-center mb-32"
-    >
-      <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 md:w-full sm:w-full justify-start flex flex-col">
+    <div className="container mx-auto flex items-center justify-center mb-32">
+      <div
+        id="experience"
+        className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 md:w-full sm:w-full justify-start flex flex-col pt-2"
+      >
         <BlockTitle text="My work experience" number="02" className="mb-8" />
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex flex-row md:flex-col">
