@@ -33,7 +33,10 @@ const Contacts: NextComponentType = () => {
   ]
 
   return (
-    <div className=" container mx-auto flex items-center justify-center">
+    <div
+      id="contact"
+      className=" container mx-auto flex items-center justify-center"
+    >
       <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 md:w-full sm:w-full justify-start flex flex-col">
         <BlockTitle text="Let's keep in touch" number="03" className="mb-8" />
         <p className="mb-4">

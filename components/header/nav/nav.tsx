@@ -16,8 +16,8 @@ const Nav: NextPage<Props> = ({ menuItems }) => {
   return (
     <>
       {/*TODO: Provide # for contents*/}
-      {menuItems.map(({ text }, index) => (
-        <MenuItem index={index + 1} key={index}>
+      {menuItems.map(({ text, href }, index) => (
+        <MenuItem index={index + 1} key={index} href={href}>
           {text}
         </MenuItem>
       ))}

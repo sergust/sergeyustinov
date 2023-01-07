@@ -12,7 +12,10 @@ const technologiesList = [
 
 const About: NextComponentType = () => {
   return (
-    <div className="py-64 container mx-auto flex items-center justify-center">
+    <div
+      id="about"
+      className="py-64 container mx-auto flex items-center justify-center"
+    >
       <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 md:w-full sm:w-full justify-start flex flex-col">
         <BlockTitle text="About Me" number="01" className="mb-8" />
         <div className="flex flex-wrap-reverse sm:flex-nowrap gap-4">

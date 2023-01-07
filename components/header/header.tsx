@@ -7,20 +7,21 @@ import { useAppContext } from '../../context/AppContext'
 
 export interface MenuItemInterface {
   text: string
+  href: string
 }
 
 export const menuItems: MenuItemInterface[] = [
   {
     text: 'about',
+    href: '#about',
   },
   {
     text: 'experience',
-  },
-  {
-    text: 'work',
+    href: '#experience',
   },
   {
     text: 'contact',
+    href: '#contact',
   },
 ]
 
