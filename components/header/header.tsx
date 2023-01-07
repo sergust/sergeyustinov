@@ -29,7 +29,7 @@ const Header: NextComponentType = () => {
   const { showAsideMenu } = useAppContext()
 
   return (
-    <div className="drop-shadow-md py-6 px-10">
+    <div className="drop-shadow-md py-6 container mx-auto">
       <div className="flex justify-between">
         <Logo />
         <nav className="flex font-mono">
