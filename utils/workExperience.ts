@@ -8,7 +8,7 @@ export const useWorkExperience = () => {
   useEffect(() => {
     const calculateExperience = () => {
       const diffInMilliseconds = currentDate.getTime() - startDate.getTime()
-      const years = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365)
+      const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365))
       setYearsOfExperience(years)
     }
 
