@@ -1,5 +1,6 @@
 import type { NextComponentType } from 'next'
 import BlockTitle from '../block-title/block-title'
+import { useWorkExperience } from '../../utils/workExperience'
 
 const technologiesList = [
   'JavaScript',
@@ -11,6 +12,7 @@ const technologiesList = [
 ]
 
 const About: NextComponentType = () => {
+  const yearsOfExperience = useWorkExperience()
   return (
     <div className="py-64 container mx-auto flex items-center justify-center">
       <div
@@ -34,9 +36,9 @@ const About: NextComponentType = () => {
               Sensand, a B2B SaaS platform that serves agriculture and land use
               managers as end users, with the entire AgTech ecosystem of tech
               providers working in one environment. As a software engineer with
-              over 2 years of experience in developing and maintaining software
-              applications, I have a strong foundation in front-end development
-              using Angular, Vue, React, and TypeScript.
+              over {yearsOfExperience} years of experience in developing and
+              maintaining software applications, I have a strong foundation in
+              front-end development using Angular, Vue, React, and TypeScript.
             </p>
             <p>
               In my free time, I enjoy staying up-to-date on the latest

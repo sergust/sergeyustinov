@@ -1,7 +1,10 @@
 import type { NextComponentType } from 'next'
 import Blob from '../blob/blob'
+import { useWorkExperience } from '../../utils/workExperience'
 
 const Summary: NextComponentType = () => {
+  const yearsOfExperience = useWorkExperience()
+
   return (
     <div className="mt-64 flex container items-center justify-center">
       <div className="w-full sm:max-w-5xl">
@@ -14,10 +17,10 @@ const Summary: NextComponentType = () => {
         </div>
 
         <p className="w-full sm:w-2/3">
-          I am a highly skilled software engineer with over 2 years of
-          experience in developing and maintaining software applications. My
-          focus is on front-end development using Angular, Vue, React, and
-          TypeScript
+          I am a highly skilled software engineer with over {yearsOfExperience}{' '}
+          years of experience in developing and maintaining software
+          applications. My focus is on front-end development using Angular, Vue,
+          React, and TypeScript
         </p>
       </div>
       <Blob />
