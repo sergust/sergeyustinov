@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 export const useWorkExperience = () => {
-  const startDate = new Date('2019-12-19')
+  const startDate = new Date('2018-08-19')
   const currentDate = new Date()
   const [yearsOfExperience, setYearsOfExperience] = useState<number>(0)
 

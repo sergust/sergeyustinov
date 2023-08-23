@@ -35,7 +35,7 @@ export const experienceList: IExperience[] = [
     title: 'Frontend Developer',
     company: 'Eriell',
     companyLink: 'https://www.eriell.com/en/',
-    startDay: '19 December 2019',
+    startDay: '19 August 2018',
     endDay: '1 June 2020',
     responsibilities: [
       'Specialized UI Development: Designed and implemented a sensor-friendly user interface optimized for low-data usage on drilling rigs.',
