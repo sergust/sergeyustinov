@@ -14,7 +14,7 @@ export const experienceList: IExperience[] = [
       'Provide technical advice and consultations to the cross-functional teams in relation to Front End to assist the process of new features development and implementation',
     ],
     id: 1,
-    skills: ['TypeScript', 'Angular', 'Tailwind CSS'],
+    skills: ['TypeScript', 'Angular', 'Vue', 'React', 'Tailwind CSS'],
   },
   {
     title: 'Software Engineer',
@@ -30,6 +30,20 @@ export const experienceList: IExperience[] = [
     ],
     id: 2,
     skills: ['TypeScript', 'Vuetify', 'Vue'],
+  },
+  {
+    title: 'Frontend Developer',
+    company: 'Eriell',
+    companyLink: 'https://www.eriell.com/en/',
+    startDay: '19 December 2019',
+    endDay: '1 June 2020',
+    responsibilities: [
+      'Specialized UI Development: Designed and implemented a sensor-friendly user interface optimized for low-data usage on drilling rigs.',
+      'Component Library Innovation: Pioneered the introduction of a component library, complemented by a rigorous review process to ensure quality and consistency.',
+      'UI Modernization: Successfully transitioned legacy PHP-based UI to a more dynamic and responsive Vue.js framework.',
+    ],
+    id: 2,
+    skills: ['TypeScript', 'Vue', 'PHP'],
   },
 ]
 
