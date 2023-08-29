@@ -40,9 +40,16 @@ const Contacts: NextComponentType = () => {
       >
         <BlockTitle text="Let's keep in touch" number="03" className="mb-8" />
         <p className="mb-4">
-          Currently, I am now not looking for any job opportunities. However,
-          inbox is always open for you. Whether you want to propose cooperation
-          or just say hello, I will try to answer you as soon as possible
+          Currently, I am now looking for a Senior Frontend Engineer role.
+          Specifically, I'm seeking a permanent Hybrid role in Sydney or a
+          Remote position. My expertise lies in React, Angular, and Vue for
+          frontend development. While it's not a requirement, I'd love to work
+          in an environment that also utilizes Node.js on the backend. What's
+          most important to me is joining an amazing, friendly, and open-minded
+          team of professionals who are passionate about their work. Thank you
+          in advance for any connections, advice, or opportunities you can
+          offer. Feel free to reach out to me directly through the contacts that
+          are located in my resume.
         </p>
         <div className="flex justify-between flex-col md:flex-row">
           {contacts.map((contact, index) => (
